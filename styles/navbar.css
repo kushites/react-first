@@ -1,0 +1,16 @@
+#navbar{
+display:flex;
+justify-content: space-between;
+align-items: center;
+
+}
+#option{
+    display:flex;
+    gap:25px
+}
+#food{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:10px
+}
