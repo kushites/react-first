@@ -3,10 +3,15 @@ import '../styles/navbar.css'
  let nav=document.querySelector("#navbar")
  nav.innerHTML=navbar()
  let foodappend=async()=>{
+try{
     let food= await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
     let data = await food.json()
     console.log(data)
     appendfood(data.categories)
+}
+catch{
+    console.log(err)
+}
 
 }
 foodappend()
